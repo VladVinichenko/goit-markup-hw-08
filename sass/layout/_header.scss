@@ -1,0 +1,35 @@
+.header {
+  border-bottom: 1px solid #ececec;
+
+  &__contact-item {
+    &:last-child {
+      margin-left: var(--menu-interval);
+    }
+  }
+
+  &__contact-svg {
+    fill: var(--seconary-colour);
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    transition: fill var(--anim-d) var(--anim-t);
+  }
+}
+
+&__logo {
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  align-items: center;
+}
+
+&__contact {
+  margin-left: auto;
+  align-items: center;
+}
+
+&__container,
+&__nav,
+&__contact {
+  display: flex;
+}

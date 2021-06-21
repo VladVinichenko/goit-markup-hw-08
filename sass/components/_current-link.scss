@@ -1,0 +1,7 @@
+.current-link {
+  color: var(--focus-colour);
+
+  &.menu__link::after {
+    opacity: 1;
+  }
+}

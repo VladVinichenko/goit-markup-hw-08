@@ -1,0 +1,34 @@
+.features {
+  margin-left: var(--primary-margin-reverse);
+  margin-top: var(--primary-margin-reverse);
+  display: flex;
+  flex-wrap: wrap;
+  &__box-svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    background-color: var(--button-background-colour);
+    border-radius: 4px;
+    margin-bottom: var(--primary-margin);
+  }
+  &__block {
+    margin-left: var(--primary-margin);
+    margin-top: var(--primary-margin);
+    flex-basis: var(--flex-x4);
+  }
+  &__svg {
+    height: 70px;
+    width: 70px;
+  }
+  &__text {
+    line-height: 1.71;
+    color: var(--seconary-colour);
+  }
+  &__title {
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+}

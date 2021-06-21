@@ -1,0 +1,28 @@
+.horizontal-button-list {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+.horizontal-button-list > .horizontal-button-list__box:not(:last-child) {
+  margin-right: 8px;
+}
+.horizontal-button-list__button {
+  font-weight: 500;
+  font-size: var(--seconary-font-size);
+  line-height: 1.63;
+  text-align: center;
+  background-color: var(--button-background-colour);
+  cursor: pointer;
+  border-radius: 4px;
+  padding-left: var(--horizontal-button-horizontal-padding);
+  padding-right: var(--horizontal-button-horizontal-padding);
+  padding-top: var(--horizontal-button-vertical-padding);
+  padding-bottom: var(--horizontal-button-vertical-padding);
+  border: none;
+  transition: color var(--anim-d) var(--anim-t), background-color var(--anim-d) var(--anim-t), box-shadow var(--anim-d) var(--anim-t);
+}
+.horizontal-button-list__button:hover, .horizontal-button-list__button:focus {
+  color: var(--dark-text-colour);
+  background-color: var(--focus-colour);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}/*# sourceMappingURL=horizontal-button-list.css.map */

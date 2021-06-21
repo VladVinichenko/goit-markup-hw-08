@@ -1,0 +1,119 @@
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.8);
+}
+.modal-title {
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: var(--main-colour);
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+.modal-form {
+  display: flex;
+  flex-direction: column;
+
+  &__input,
+  &__comment {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding-right: 12px;
+    background-color: transparent;
+    transition: border var(--anim-d) var(--anim-t);
+    width: 100%;
+    font-size: 12px;
+    line-height: 1.67;
+    letter-spacing: 0.01em;
+    margin-top: 4px;
+    &::placeholder {
+      color: rgba(117, 117, 117, 0.5);
+    }
+    &:focus {
+      border: 1px solid var(--focus-colour);
+      outline: none;
+    }
+  }
+  &__input-wrapper {
+    position: relative;
+    display: block;
+  }
+  &__input-box,
+  &__comment-box {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: var(--seconary-colour);
+  }
+  &__input-box {
+    margin-bottom: 10px;
+  }
+  &__comment-box {
+    margin-bottom: 20px;
+  }
+  &__input-icon {
+    fill: var(--main-colour);
+    left: 12px;
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    transition: fill var(--anim-d) var(--anim-t);
+    .modal-form__input:focus + & {
+      fill: var(--focus-colour);
+    }
+  }
+  &__comment {
+    resize: none;
+    height: 120px;
+    padding: 12px 16px;
+  }
+  &__input {
+    height: 40px;
+    padding-left: 42px;
+    cursor: pointer;
+  }
+  &__license-checkbox-z {
+    line-height: 1.71;
+    color: var(--seconary-colour);
+  }
+  &__license-checkbox-link {
+    line-height: 1.71;
+    text-decoration-line: underline;
+    color: var(--focus-colour);
+  }
+  &__send-btn-text {
+    font-size: var(--seconary-font-size);
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--dark-text-colour);
+    margin-right: 10px;
+  }
+  &__button {
+    display: flex;
+    justify-content: center;
+    margin-top: var(--primary-margin);
+  }
+  &__user-accept-license::before {
+    display: inline-block;
+    content: "";
+    width: 16px;
+    height: 15px;
+    background-image: url("../images/check-invalid.svg");
+    margin-right: 7px;
+    vertical-align: middle;
+  }
+  &__license-checkbox {
+    vertical-align: middle;
+    &:checked + .modal-form__user-accept-license::before {
+      background-image: url("../images/check-valid.svg");
+    }
+    &:focus + .modal-form__user-accept-license::before {
+      outline: 2px solid var(--focus-colour);
+    }
+  }
+}

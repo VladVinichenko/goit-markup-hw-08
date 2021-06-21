@@ -1,0 +1,29 @@
+:root {
+  --main-font: Roboto, sans-serif;
+  --seconary-font: Raleway, sans-serif;
+  --focus-colour: #2196f3;
+  --main-colour: #212121;
+  --seconary-colour: #757575;
+  --background-colour: #2f303a;
+  --footer-link-colour: rgba(255, 255, 255, 0.6);
+  --dark-text-colour: #ffffff;
+  --hero__button-focus-colour: #188ce8;
+  --button-background-colour: #f5f4fa;
+  --tripple-colour: #afb1b8;
+  --primary-font-size: 14px;
+  --seconary-font-size: 16px;
+  --title-font-size: 36px;
+  --padding-section: 94px;
+  --primary-margin: 30px;
+  --primary-margin-reverse: -30px;
+  --horizontal-button-vertical-padding: 6px;
+  --horizontal-button-horizontal-padding: 22px;
+  --padding-footer-top-bottom: 60px;
+  --flex-x3: calc((100% - 90px) / 3);
+  --flex-x4: calc((100% - 120px) / 4);
+  --flex-x6: calc((100% - 180px) / 6);
+  --portfolio-card-padding: 20px;
+  --menu-interval: 50px;
+  --anim-d: 250ms;
+  --anim-t: cubic-bezier(0.4, 0, 0.2, 1);
+}

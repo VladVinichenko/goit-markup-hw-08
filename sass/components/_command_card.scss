@@ -1,0 +1,43 @@
+.command-card {
+  margin-left: var(--primary-margin);
+  margin-top: var(--primary-margin);
+  flex-basis: var(--flex-x4);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background: #ffffff;
+
+  &__title {
+    padding: 30px;
+  }
+
+  &__name,
+  &__about {
+    font-size: var(--seconary-font-size);
+    text-align: center;
+  }
+
+  &__name {
+    font-weight: 500;
+    line-height: 1.19;
+    margin-bottom: 10px;
+  }
+
+  &__about {
+    line-height: 1.19;
+    color: var(--seconary-colour);
+    margin-bottom: 16px;
+  }
+
+  &__social-list {
+    justify-content: space-between;
+  }
+
+  &_social-icon {
+    fill: var(--tripple-colour);
+  }
+
+  &__social-icon-background {
+    background-color: var(--dark-text-colour);
+  }
+}

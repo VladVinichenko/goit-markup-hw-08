@@ -1,0 +1,117 @@
+.footer {
+  background-color: var(--background-colour);
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__address {
+    margin-top: 20px;
+  }
+
+  &__address-list {
+    flex-direction: column;
+    display: flex;
+
+    & > .footer__address-list-title:not(:last-child) {
+      margin-bottom: 9px;
+    }
+  }
+
+  &__address-list-title-link-map,
+  &__address-list-title-link {
+    font-style: inherit;
+    line-height: 1.71;
+  }
+
+  &__address-list-title-link-map {
+    color: var(--dark-text-colour);
+  }
+
+  &__address-list-title-link {
+    color: var(--footer-link-colour);
+  }
+
+  &__title {
+    font-size: var(--main-font);
+    line-height: 16px;
+    text-transform: uppercase;
+    color: var(--dark-text-colour);
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+
+  &__form {
+    margin-left: auto;
+  }
+
+  &__container {
+    display: flex;
+    align-items: baseline;
+  }
+
+  &__left-box {
+    margin-right: 70px;
+  }
+
+  &__left-box-subscribe {
+    display: flex;
+  }
+
+  &__subscribe-input {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    padding-left: 16px;
+    padding-right: 16px;
+    height: 50px;
+    overflow: auto;
+    font-size: var(--seconary-font-size);
+    line-height: 1.25;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    width: 358px;
+    transition: border var(--anim-d) var(--anim-t);
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  &:focus {
+    border: 1px solid var(--focus-colour);
+    outline: none;
+  }
+
+  &__subscribe-btn-icon {
+    margin-left: 10px;
+  }
+
+  &__subscribe-btn {
+    margin-left: 12px;
+  }
+
+  &__subscribe-btn {
+    font-size: var(--seconary-font-size);
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--dark-text-colour);
+  }
+
+  &__subscribe-box {
+    display: flex;
+  }
+
+  &__social-list > .social-list__item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &__social-icon {
+    fill: var(--dark-text-colour);
+  }
+
+  &__social-icon-background {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}

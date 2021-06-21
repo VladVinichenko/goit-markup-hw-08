@@ -1,0 +1,10 @@
+.command-section {
+  background: #f5f4fa;
+}
+
+.command-list {
+  margin-left: var(--primary-margin-reverse);
+  margin-top: var(--primary-margin-reverse);
+  display: flex;
+  flex-wrap: wrap;
+}
