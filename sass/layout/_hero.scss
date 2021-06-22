@@ -1,13 +1,13 @@
 .hero {
   background-color: var(--background-colour);
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/hero/bg.jpg);
-  background-size: cover, 1600px;
+    url("../images/hero/bg-mob.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 
@@ -23,10 +23,71 @@
 
   &__title {
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
     text-transform: uppercase;
     margin-bottom: 30px;
-    width: 696px;
+    max-width: 360px;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+      line-height: 1.36;
+      width: 696px;
+    }
+  }
+
+  @media (min-device-pixel-ratio: 2) and (min-width: 480px),
+    (min-resolution: 192dpi) and (min-width: 480px),
+    (min-resolution: 2dppx) and (min-width: 480px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero/bg-mob@2x.jpg");
+    background-size: cover;
+  }
+
+  @media (min-width: 768px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero/bg-tablet.jpg");
+    background-size: cover, 768px;
+  }
+
+  @media (min-device-pixel-ratio: 2) and (min-width: 768px),
+    (min-resolution: 192dpi) and (min-width: 768px),
+    (min-resolution: 2dppx) and (min-width: 768px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero/bg-tablet@2x.jpg");
+    background-size: cover, 768px;
+  }
+
+  @media (min-width: 1200px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero/bg-desktop.jpg");
+    background-size: cover, 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
+  @media (min-device-pixel-ratio: 2) and (min-width: 1200px),
+    (min-resolution: 192dpi) and (min-width: 1200px),
+    (min-resolution: 2dppx) and (min-width: 1200px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero/bg-desktop@2x.jpg");
+    background-size: cover, 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }

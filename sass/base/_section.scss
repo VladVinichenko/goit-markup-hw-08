@@ -1,4 +1,15 @@
+// .section {
+//   padding-top: var(--padding-section-m-t);
+//   padding-bottom: var(--padding-section-m-t);
+//   background-color: red;
+// }
+
 .section {
-  padding-top: var(--padding-section);
-  padding-bottom: var(--padding-section);
+  padding-top: var(--padding-section-m-t);
+  padding-bottom: var(--padding-section-m-t);
+
+  @media screen and (min-width: 1200px) {
+    padding-top: var(--padding-section);
+    padding-bottom: var(--padding-section);
+  }
 }

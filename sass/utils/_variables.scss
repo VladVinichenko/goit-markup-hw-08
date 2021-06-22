@@ -14,11 +14,13 @@
   --seconary-font-size: 16px;
   --title-font-size: 36px;
   --padding-section: 94px;
+  --padding-section-m-t: 60px;
   --primary-margin: 30px;
   --primary-margin-reverse: -30px;
   --horizontal-button-vertical-padding: 6px;
   --horizontal-button-horizontal-padding: 22px;
   --padding-footer-top-bottom: 60px;
+  --flex-x2: calc((100% - 60px) / 2);
   --flex-x3: calc((100% - 90px) / 3);
   --flex-x4: calc((100% - 120px) / 4);
   --flex-x6: calc((100% - 180px) / 6);
