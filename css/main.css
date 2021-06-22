@@ -813,10 +813,19 @@ address {
 }
 .footer__container {
   display: flex;
-  align-items: baseline;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 .footer__left-box {
-  margin-right: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer__left-box {
+    margin-right: 70px;
+  }
 }
 .footer__left-box-subscribe {
   display: flex;
@@ -847,8 +856,10 @@ address {
 .footer__subscribe-btn-icon {
   margin-left: 10px;
 }
-.footer__subscribe-btn {
-  margin-left: 12px;
+@media screen and (min-width: 1200px) {
+  .footer__subscribe-btn {
+    margin-left: 12px;
+  }
 }
 .footer__subscribe-btn {
   font-size: var(--seconary-font-size);
@@ -861,6 +872,8 @@ address {
 }
 .footer__subscribe-box {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .footer__social-list > .social-list__item:not(:last-child) {
   margin-right: 10px;
