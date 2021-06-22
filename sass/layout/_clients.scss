@@ -4,10 +4,16 @@
   }
 
   &__-list {
-    margin-left: var(--primary-margin-reverse);
-    margin-top: var(--primary-margin-reverse);
     align-items: center;
-    display: flex;
+    display: inline-flexbox;
+
+    @media screen and (min-width: 280px) {
+      flex-wrap: wrap;
+      align-items: center;
+      display: flex;
+      margin-left: var(--primary-margin-reverse);
+      margin-top: var(--primary-margin-reverse);
+    }
   }
 }
 
@@ -19,8 +25,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
     height: 92px;
+
+    @media screen and (min-width: 480px) {
+      width: 210px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 226px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 170px;
+    }
 
     &:hover,
     &:focus {
@@ -41,8 +58,26 @@
   }
 
   &__button-box {
-    flex-basis: var(--flex-x6);
-    margin-left: var(--primary-margin);
+    width: 100%;
+
     margin-top: var(--primary-margin);
+
+    @media screen and (min-width: 280px) {
+      flex-basis: var(--flex-x2);
+      margin-left: var(--primary-margin);
+      margin-top: var(--primary-margin);
+    }
+
+    @media screen and (min-width: 480px) {
+      flex-basis: var(--flex-x2);
+    }
+
+    @media screen and (min-width: 768px) {
+      flex-basis: var(--flex-x3);
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-basis: var(--flex-x6);
+    }
   }
 }
