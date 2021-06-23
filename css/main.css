@@ -1239,6 +1239,11 @@ address {
     margin-right: 0px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .horizontal-button-list {
+    margin-bottom: 50px;
+  }
+}
 .horizontal-button-list__button {
   font-weight: 500;
   font-size: var(--seconary-font-size);

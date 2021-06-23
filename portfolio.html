@@ -144,7 +144,15 @@
         <a href="/" class="portfolio-card__link link">
             <div class="portfolio-card__box">
 <div class="portfolio-card__img-wrapper">
-    <img src="./images/portfolio/techno.jpg" alt="Сайт на экране" width="370" height="294">
+    <picture class="portfolio-card__picture">
+        <source srcset="./images/portfolio/techno-m.jpg 1x, ./images/portfolio/techno-m@2x.jpg 2x"
+            media="(min-width: 1200px)" />
+        <source srcset="./images/portfolio/techno-t.jpg 1x, ./images/portfolio/techno-t@2x.jpg 2x"
+            media="(min-width: 768px)" />
+        <source srcset="./images/portfolio/techno-d.jpg 1x, ./images/portfolio/techno-d@2x.jpg 2x,"
+            media="(max-width: 767)" />
+        <img src="./images/portfolio/techno-m.jpg" alt="человек"  width="100%">
+    </picture>
     <p class="portfolio-card__overlay">
         Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
         шпионажа и атак на защищённые сервера конкурентов.
@@ -168,7 +176,15 @@
             <a href="/" class="portfolio-card__link link">
                            <div class="portfolio-card__box">
 <div class="portfolio-card__img-wrapper">
-    <img src="./images/portfolio/poster_basketball.jpg" alt="баскетболисты в действии" width="370" height="294">
+        <picture class="portfolio-card__picture">
+            <source srcset="./images/portfolio/poster-basketball-m.jpg 1x, ./images/portfolio/poster-basketball-m@2x.jpg 2x"
+                media="(min-width: 1200px)" />
+            <source srcset="./images/portfolio/poster-basketball-t.jpg 1x, ./images/portfolio/poster-basketball-t@2x.jpg 2x"
+                media="(min-width: 768px)" />
+            <source srcset="./images/portfolio/poster-basketball-d.jpg 1x, ./images/portfolio/poster-basketball-d@2x.jpg 2x,"
+                media="(max-width: 767)" />
+            <img src="./images/portfolio/poster-basketball-m.jpg" alt="человек" width="100%">
+        </picture>
         <p class="portfolio-card__overlay">
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, molestias. Alias iusto mollitia commodi enim cum quae dignissimos culpa! Nulla quidem, facere vel dicta unde distinctio eos quo repudiandae eligendi.
         </p>
