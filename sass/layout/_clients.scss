@@ -1,83 +1,79 @@
-.clients-container {
-  &__title {
-    margin-bottom: 50px;
-  }
+.clients-container__title {
+  margin-bottom: 50px;
+}
 
-  &__-list {
+.clients-container__-list {
+  align-items: center;
+  display: inline-flexbox;
+
+  @media screen and (min-width: 280px) {
+    flex-wrap: wrap;
     align-items: center;
-    display: inline-flexbox;
-
-    @media screen and (min-width: 280px) {
-      flex-wrap: wrap;
-      align-items: center;
-      display: flex;
-      margin-left: var(--primary-margin-reverse);
-      margin-top: var(--primary-margin-reverse);
-    }
+    display: flex;
+    margin-left: var(--primary-margin-reverse);
+    margin-top: var(--primary-margin-reverse);
   }
 }
 
-.clients {
-  &__button {
-    border: 1px solid var(--tripple-colour);
-    box-sizing: border-box;
-    border-radius: 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 92px;
+.clients__button {
+  border: 1px solid var(--tripple-colour);
+  box-sizing: border-box;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 92px;
 
-    @media screen and (min-width: 480px) {
-      width: 210px;
-    }
-
-    @media screen and (min-width: 768px) {
-      width: 226px;
-    }
-
-    @media screen and (min-width: 1200px) {
-      width: 170px;
-    }
-
-    &:hover,
-    &:focus {
-      border: 1px solid var(--focus-colour);
-    }
-
-    &:hover .clients__svg,
-    &:focus .clients__svg {
-      fill: var(--focus-colour);
-    }
+  @media screen and (min-width: 480px) {
+    width: 210px;
   }
 
-  &__svg {
-    height: 60px;
-    width: 106px;
-    fill: var(--tripple-colour);
-    transition: fill var(--anim-d) var(--anim-t);
+  @media screen and (min-width: 768px) {
+    width: 226px;
   }
 
-  &__button-box {
-    width: 100%;
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
 
+  &:hover,
+  &:focus {
+    border: 1px solid var(--focus-colour);
+  }
+
+  &:hover .clients__svg,
+  &:focus .clients__svg {
+    fill: var(--focus-colour);
+  }
+}
+
+.clients__svg {
+  height: 60px;
+  width: 106px;
+  fill: var(--tripple-colour);
+  transition: fill var(--anim-d) var(--anim-t);
+}
+
+.clients__button-box {
+  width: 100%;
+
+  margin-top: var(--primary-margin);
+
+  @media screen and (min-width: 280px) {
+    flex-basis: var(--flex-x2);
+    margin-left: var(--primary-margin);
     margin-top: var(--primary-margin);
+  }
 
-    @media screen and (min-width: 280px) {
-      flex-basis: var(--flex-x2);
-      margin-left: var(--primary-margin);
-      margin-top: var(--primary-margin);
-    }
+  @media screen and (min-width: 480px) {
+    flex-basis: var(--flex-x2);
+  }
 
-    @media screen and (min-width: 480px) {
-      flex-basis: var(--flex-x2);
-    }
+  @media screen and (min-width: 768px) {
+    flex-basis: var(--flex-x3);
+  }
 
-    @media screen and (min-width: 768px) {
-      flex-basis: var(--flex-x3);
-    }
-
-    @media screen and (min-width: 1200px) {
-      flex-basis: var(--flex-x6);
-    }
+  @media screen and (min-width: 1200px) {
+    flex-basis: var(--flex-x6);
   }
 }

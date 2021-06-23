@@ -20,44 +20,44 @@
     flex-basis: var(--flex-x4);
     // width: 270px;
   }
+}
 
-  &__title {
-    padding: 30px;
+.command-card__title {
+  padding: 30px;
+}
+
+.command-card__name,
+.command-card__about {
+  font-size: var(--seconary-font-size);
+  text-align: center;
+}
+
+.command-card__name {
+  font-weight: 500;
+  line-height: 1.19;
+  margin-bottom: 10px;
+}
+
+.command-card__about {
+  line-height: 1.19;
+  color: var(--seconary-colour);
+  margin-bottom: 16px;
+}
+
+.command-card__social-list {
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 206px;
+
+  @media screen and (min-width: 480px) {
+    width: 206px;
   }
+}
 
-  &__name,
-  &__about {
-    font-size: var(--seconary-font-size);
-    text-align: center;
-  }
+.command-card_social-icon {
+  fill: var(--tripple-colour);
+}
 
-  &__name {
-    font-weight: 500;
-    line-height: 1.19;
-    margin-bottom: 10px;
-  }
-
-  &__about {
-    line-height: 1.19;
-    color: var(--seconary-colour);
-    margin-bottom: 16px;
-  }
-
-  &__social-list {
-    justify-content: space-between;
-    margin: 0 auto;
-    max-width: 206px;
-
-    @media screen and (min-width: 480px) {
-      width: 206px;
-    }
-  }
-
-  &_social-icon {
-    fill: var(--tripple-colour);
-  }
-
-  &__social-icon-background {
-    background-color: var(--dark-text-colour);
-  }
+.command-card__social-icon-background {
+  background-color: var(--dark-text-colour);
 }

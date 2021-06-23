@@ -5,61 +5,62 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
+}
 
-  &__item {
-    position: relative;
-    padding-top: 32px;
-    padding-bottom: 32px;
+.menu__contact {
+  display: flex;
+  align-items: center;
+
+  &:hover .header__contact-svg,
+  &:focus .header__contact-svg {
+    fill: var(--focus-colour);
+  }
+}
+
+.menu__link {
+  &:hover:after,
+  &:focus:after {
+    opacity: 1;
   }
 
-  &__link,
-  &__contact {
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--main-colour);
-    transition: color var(--anim-d) var(--anim-t);
-
-    &:hover,
-    &:focus {
-      color: var(--focus-colour);
-    }
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: var(--focus-colour);
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    bottom: -1px;
+    left: 0;
+    opacity: 0;
+    transition: opacity var(--anim-d) var(--anim-t);
   }
-  &__item {
-    position: relative;
+}
 
-    .menu > &:not(:last-child) {
-      margin-right: var(--menu-interval);
-    }
+.menu__item {
+  position: relative;
+}
+
+.menu > .menu__item:not(:last-child) {
+  margin-right: var(--menu-interval);
+}
+
+.menu__link,
+.menu__contact {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-colour);
+  transition: color var(--anim-d) var(--anim-t);
+
+  &:hover,
+  &:focus {
+    color: var(--focus-colour);
   }
+}
 
-  &__link {
-    &:hover:after,
-    &:focus:after {
-      opacity: 1;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      background-color: var(--focus-colour);
-      width: 100%;
-      height: 4px;
-      border-radius: 2px;
-      bottom: -1px;
-      left: 0;
-      opacity: 0;
-      transition: opacity var(--anim-d) var(--anim-t);
-    }
-  }
-
-  &__contact {
-    display: flex;
-    align-items: center;
-
-    &:hover .header__contact-svg,
-    &:focus .header__contact-svg {
-      fill: var(--focus-colour);
-    }
-  }
+.menu__item {
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }

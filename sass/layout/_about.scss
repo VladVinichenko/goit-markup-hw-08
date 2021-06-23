@@ -3,15 +3,13 @@
   margin-top: var(--primary-margin-reverse);
   display: flex;
   flex-wrap: wrap;
-
-  &__img {
-    margin-left: var(--primary-margin);
-    margin-top: var(--primary-margin);
-    flex-basis: var(--flex-x3);
-    position: relative;
-  }
 }
-
+.about-list__img {
+  margin-left: var(--primary-margin);
+  margin-top: var(--primary-margin);
+  flex-basis: var(--flex-x3);
+  position: relative;
+}
 .about__section {
   padding-top: 0;
   @media screen and (min-width: 1200px) {
