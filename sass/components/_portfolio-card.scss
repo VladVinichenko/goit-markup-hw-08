@@ -2,7 +2,7 @@
   background: var(--dark-text-colour);
   transition: color var(--anim-d) var(--anim-t),
     box-shadow var(--anim-d) var(--anim-t);
-
+  min-block-size: 100%;
   margin-top: var(--primary-margin);
 
   @media screen and (min-width: 768px) {
@@ -15,10 +15,17 @@
   }
 }
 
+.portfolio-card__box {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 .portfolio-card__border-to-image {
   border: 1px solid #eeeeee;
   border-top: 0px;
   padding: var(--portfolio-card-padding);
+  flex-grow: 1;
 }
 .portfolio-card__overlay {
   background-color: rgba(33, 150, 243, 0.9);
@@ -58,6 +65,7 @@
 }
 
 .portfolio-card__link {
+  height: 100%;
   &:hover .portfolio-card__overlay,
   &:focus .portfolio-card__overlay {
     transform: translateY(0%);
