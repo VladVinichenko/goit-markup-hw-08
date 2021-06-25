@@ -11,9 +11,9 @@
   background-repeat: no-repeat;
   background-position: center;
 
-  @media (min-device-pixel-ratio: 2) and (min-width: 480px),
-    (min-resolution: 192dpi) and (min-width: 480px),
-    (min-resolution: 2dppx) and (min-width: 480px) {
+  @media (min-device-pixel-ratio: 2) and (max-width: 480px),
+    (min-resolution: 192dpi) and (max-width: 480px),
+    (min-resolution: 2dppx) and (max-width: 480px) {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
@@ -22,7 +22,7 @@
     background-size: cover;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 481px) {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
@@ -30,9 +30,9 @@
       url("../images/hero/bg-tablet.jpg");
   }
 
-  @media (min-device-pixel-ratio: 2) and (min-width: 768px),
-    (min-resolution: 192dpi) and (min-width: 768px),
-    (min-resolution: 2dppx) and (min-width: 768px) {
+  @media (min-device-pixel-ratio: 2) and (min-width: 481px),
+    (min-resolution: 192dpi) and (min-width: 481px),
+    (min-resolution: 2dppx) and (min-width: 481px) {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
@@ -40,7 +40,7 @@
       url("../images/hero/bg-tablet@2x.jpg");
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 769px) {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
@@ -51,9 +51,9 @@
     padding-bottom: 200px;
   }
 
-  @media (min-device-pixel-ratio: 2) and (min-width: 1200px),
-    (min-resolution: 192dpi) and (min-width: 1200px),
-    (min-resolution: 2dppx) and (min-width: 1200px) {
+  @media (min-device-pixel-ratio: 2) and (min-width: 769px),
+    (min-resolution: 192dpi) and (min-width: 769px),
+    (min-resolution: 2dppx) and (min-width: 769px) {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
