@@ -1110,7 +1110,6 @@ address {
 @media (min-device-pixel-ratio: 2) and (max-width: 480px), (-webkit-min-device-pixel-ratio: 2) and (max-width: 480px), (min-resolution: 192dpi) and (max-width: 480px), (min-resolution: 2dppx) and (max-width: 480px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/bg-mob@2x.jpg");
-    background-size: cover;
   }
 }
 @media (min-width: 481px) {
@@ -1126,7 +1125,11 @@ address {
 @media (min-width: 769px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/bg-desktop.jpg");
-    background-size: cover, 1600px;
+  }
+}
+@media (min-device-pixel-ratio: 2) and (min-width: 769px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 769px), (min-resolution: 192dpi) and (min-width: 769px), (min-resolution: 2dppx) and (min-width: 769px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/bg-desktop@2x.jpg");
   }
 }
 @media (min-width: 1200px) {
@@ -1135,12 +1138,9 @@ address {
     padding-bottom: 200px;
   }
 }
-@media (min-device-pixel-ratio: 2) and (min-width: 769px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 769px), (min-resolution: 192dpi) and (min-width: 769px), (min-resolution: 2dppx) and (min-width: 769px) {
+@media (min-width: 1601px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/bg-desktop@2x.jpg");
-    background-size: cover, 1600px;
-    padding-top: 200px;
-    padding-bottom: 200px;
   }
 }
 
